@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <div
+        class="min-h-screen bg-gradient-to-br from-gray-800 via-black-700 to-purple-800 flex justify-center items-center gap-10 flex-wrap p-8">
+
+        <!-- Card 1 -->
+        <div class=" bg-black/30 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
+
+            <form action="" class="flex items-center gap-3 p-5">
+                <input
+                    class="flex-1 bg-transparent border-b-2 border-white text-white placeholder-white/70 outline-none text-lg py-2"
+                    type="text"
+                    placeholder="Enter city name"
+                    required>
+                <button
+                    type="submit"
+                    class="px-5 py-2 rounded-xl bg-white text-blue-600 font-bold hover:bg-blue-100 duration-300 cursor-pointer">
+                    Search
+                </button>
+            </form>
+
+            <div id="weather_card" class="hidden">
+                <div
+                    class="flex justify-between items-center w-80 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-700 p-6 m-5 shadow-xl">
+
+                    <div>
+                        <h1 class="text-6xl font-extrabold text-white">--°C</h1>
+                        <h2 class="text-2xl font-semibold text-slate-200 mt-2">Indore-</h2>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <img class="w-20 h-20"
+                            src="https://cdn.weatherapi.com/weather/64x64/day/296.png"
+                            alt="">
+                        <p class="text-slate-300 text-lg mt-1">Rainy</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <!-- <div class="bg-white/20 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/30 overflow-hidden">
+
+            <div id="weather_card2">
+                <div
+                    class="flex justify-between items-center w-80 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-700 p-6 m-5 shadow-xl">
+
+                    <div>
+                        <h1 class="text-6xl font-extrabold text-white">26°C</h1>
+                        <h2 class="text-2xl font-semibold text-slate-200 mt-2">Indore</h2>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <img class="w-20 h-20"
+                            src="https://cdn.weatherapi.com/weather/64x64/day/296.png"
+                            alt="">
+                        <p class="text-slate-300 text-lg mt-1">Rainy</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> -->
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
