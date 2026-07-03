@@ -2,6 +2,10 @@
 
 A simple and responsive Weather App built using **HTML, Tailwind CSS, and JavaScript**. It fetches real-time weather data using the WeatherAPI and displays current weather information in a clean and user-friendly interface.
 
+
+Preview -
+https://weather-app-with-api-olive.vercel.app
+
 ## Features
 - 🌤️ Real-time weather updates
 - 📍 Search weather by city
